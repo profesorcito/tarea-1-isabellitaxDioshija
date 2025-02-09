@@ -4,12 +4,12 @@ using namespace std;
 
 // Función para calcular la suma de los dígitos de un número
 int sumaDigitos(int n) {
-    int suma = 0;
+    int sumarDig = 0;
     while (n > 0) {
-        suma += n % 10;
+        sumarDig += n % 10;
         n /= 10;
     }
-    return suma;
+    return sumarDig;
 }
 
 // Función para calcular la tarifa
