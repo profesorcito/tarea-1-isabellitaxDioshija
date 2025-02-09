@@ -2,14 +2,14 @@
 
 using namespace std;
 
-// TODO: Implementar función para calcular la suma de los dígitos de un número
+// TODO: Implementar f para calcular la suma de los dígitos de un número
 int sumaDigitos(int n) {
-    int sumarDig = 0;
+    int suma = 0;
     while (n > 0) {
-        sumarDig += n % 10;
-        n /= 10;
+        suma = suma + n % 10;
+        n = n / 10;
     }
-    return sumarDig;
+    return suma;
 }
 
 // TODO: Implementar la lógica para calcular la tarifa
@@ -42,12 +42,12 @@ double calcularTarifa(int horas, int dia) {
 
     // TODO: Aplicar incremento si es fin de semana
     if (dia == 6 || dia == 7) {
-        totalPagar *= INCREMENTO_FIN_SEMANA;
+        totalPagar = totalPagar * INCREMENTO_FIN_SEMANA;
     }
 
     // TODO: Aplicar descuento si la suma de los dígitos es múltiplo de 3
     if (sumaDigitos(horas) % 3 == 0) {
-        totalPagar *= DESCUENTO_DIGITOS;
+        totalPagar = totalPagar * DESCUENTO_DIGITOS;
     }
 
     return totalPagar;
@@ -68,8 +68,3 @@ int main() {
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
