@@ -1,0 +1,3 @@
+C:/Users/ferre/OneDrive/Desktop/CLionProjects/EstacionamientoIntergalactico2/cmake-build-debug/CMakeFiles/EstacionamientoIntergalactico2.dir
+C:/Users/ferre/OneDrive/Desktop/CLionProjects/EstacionamientoIntergalactico2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ferre/OneDrive/Desktop/CLionProjects/EstacionamientoIntergalactico2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
