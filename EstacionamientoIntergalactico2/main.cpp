@@ -40,7 +40,7 @@ double calcularTarifa(int horas, int dia) {
         totalPagar = TARIFA_FIJA;
     }
 
-    // Aplicar incremento si es fin de semana (sábado = 6, domingo = 7)
+    // Aplicar incremento si es fin de semana
     if (dia == 6 || dia == 7) {
         totalPagar *= INCREMENTO_FIN_SEMANA;
     }
@@ -68,6 +68,7 @@ int main() {
 
     return 0;
 }
+
 
 
 // TIP See CLion help at <a
